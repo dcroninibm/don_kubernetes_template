@@ -14,66 +14,89 @@ required:
 
 
 # Github repos
-github-repo-ansible:
+github-repo-kubernetes:
   service_id: githubpublic
   parameters:
 #    repo_name: "{{github.parameters.open-source-repo_name}}"
 #    repo_url: "{{github.parameters.open-source-repo_URL}}"
 #    type: new | clone | link | fork
-    repo_name: "ansible"
-    repo_url: "https://github.com/ansible/ansible.git"
+    repo_name: "kubernetes"
+    repo_url: "https://github.com/kubernetes/kubernetes.git"
     type: link
     has_issues: true
   hidden: [form, description]
 
-github-repo-ansible-modules-core:
+github-repo-kops:
   service_id: githubpublic
   parameters:
 #    repo_name: "{{github.parameters.open-source-repo_name}}"
 #    repo_url: "{{github.parameters.open-source-repo_URL}}"
 #    type: new | clone | link | fork
-    repo_name: "ansible-modules-core"
-    repo_url: "https://github.com/ansible/ansible-modules-core.git"
+    repo_name: "kops"
+    repo_url: "https://github.com/kubernetes/kops.git"
     type: link
     has_issues: true
   hidden: [form, description]
 
-github-repo-ansible-modules-extra:
+github-repo-kubernetes-anywhere:
   service_id: githubpublic
   parameters:
 #    repo_name: "{{github.parameters.open-source-repo_name}}"
 #    repo_url: "{{github.parameters.open-source-repo_URL}}"
 #    type: new | clone | link | fork
-    repo_name: "ansible-modules-extras"
-    repo_url: "https://github.com/ansible/ansible-modules-extras.git"
+    repo_name: "kubernetes-anywhere"
+    repo_url: "https://github.com/kubernetes/kubernetes-anywhere.git"
     type: link
     has_issues: true
   hidden: [form, description]
 
-github-repo-ansible-container:
+github-repo-kubernetes-bootcamp:
   service_id: githubpublic
   parameters:
 #    repo_name: "{{github.parameters.open-source-repo_name}}"
 #    repo_url: "{{github.parameters.open-source-repo_URL}}"
 #    type: new | clone | link | fork
-    repo_name: "ansible-container"
-    repo_url: "https://github.com/ansible/ansible-container.git"
+    repo_name: "kubernetes-bootcamp"
+    repo_url: "https://github.com/kubernetes/kubernetes-bootcamp.git"
     type: link
     has_issues: true
   hidden: [form, description]
 
-github-repo-ansible-lockdown:
+github-repo-dashboard:
   service_id: githubpublic
   parameters:
 #    repo_name: "{{github.parameters.open-source-repo_name}}"
 #    repo_url: "{{github.parameters.open-source-repo_URL}}"
 #    type: new | clone | link | fork
-    repo_name: "ansible-lockdown"
-    repo_url: "https://github.com/ansible/ansible-lockdown.git"
+    repo_name: "dashboard"
+    repo_url: "https://github.com/kubernetes/dashboard.git"
     type: link
     has_issues: true
   hidden: [form, description]
 
+github-repo-test-infra:
+  service_id: githubpublic
+  parameters:
+#    repo_name: "{{github.parameters.open-source-repo_name}}"
+#    repo_url: "{{github.parameters.open-source-repo_URL}}"
+#    type: new | clone | link | fork
+    repo_name: "test-infra"
+    repo_url: "https://github.com/kubernetes/test-infra.git"
+    type: link
+    has_issues: true
+  hidden: [form, description]
+
+github-repo-helm:
+  service_id: githubpublic
+  parameters:
+#    repo_name: "{{github.parameters.open-source-repo_name}}"
+#    repo_url: "{{github.parameters.open-source-repo_URL}}"
+#    type: new | clone | link | fork
+    repo_name: "helm"
+    repo_url: "https://github.com/kubernetes/helm.git"
+    type: link
+    has_issues: true
+  hidden: [form, description]
 
 
 #Dra
